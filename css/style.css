@@ -33,34 +33,13 @@ body {
 }
 
 /*TYPOGRAPHY*/
-@font-face {
-  font-family: 'Gelica';
-  src: url('fonts/Fontspring-DEMO-gelica-regular.otf') format('otf');
+
+h1, h2, h3, h4 {
+  font-family: "gelica", sans-serif;
+  font-weight: 200;
+  font-style: normal;
 }
 
-h1 {
-  font-family: Gelica;
-  size: 32px;
-  font-weight:100;
-}
-
-h2 {
-  font-family: Gelica;
-  size: 26px;
-  font-weight:100;
-}
-
-h3 {
-  font-family: Gelica;
-  size: 24px;
-  font-weight:100;
-}
-
-h4 {
-  font-family: Gelica;
-  size: 20px;
-  font-weight:100;
-}
 
 h5 {
   font-family: Inter;
@@ -137,7 +116,6 @@ h5 {
   grid-template-columns: repeat(2, 200px);
   grid-template-rows: repeat(2, 200px);
   gap: 15px;
-  padding: 20px;
 }
 
 .service-item {
@@ -178,11 +156,73 @@ h5 {
   letter-spacing: 0.3px;
 }
 
-.service-item:hover .service-text {
-  color: #ffffff;
-}
 
-.service-item:hover .service-icon img {
-  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(109deg) brightness(107%) contrast(107%);
-}
+ /*Onboarding 3*/
 
+ .topnav {
+  width: 343px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0px;
+ }
+
+
+ .journal-container {
+  width: 343px;
+  height: 291px;
+  flex-shrink: 0;
+  background: var(--Cardsgreen);
+  border-radius: 8px;
+  margin-top: 0px;
+ }
+
+ .journalcard{
+  height: 144px;
+  background: var(--Cardsgreen);
+ }
+
+ .body3 {
+  font-family: inter;
+  font-size: var(--bodyxsmall);
+  background: var(--Cardsgreen);
+  padding-left: 16px;
+  text-align:left;
+ }
+
+ .feelingp {
+  font-family: inter;
+  font-size: var(--bodyxsmall);
+  background: var(--Cardsgreen);
+  text-align:center;
+ }
+
+ .journal-text{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background: var(--Cardsgreen);
+  border-radius: 8px;
+ }
+
+ .feeling3 {
+  background: var(--Cardsgreen);
+ }
+
+ .feeling3 img {
+  background: var(--Cardsgreen);
+  vertical-align:middle;
+ }
+
+ .sliderindicator3{
+  background: var(--Cardsgreen);
+ }
+
+ .content-box3 {
+  display: flex;
+  flex-direction: column;    /* stack items vertically */
+  align-items: center;       /* align items horizontally in the center */
+  text-align: center;        /* centre any text */
+  gap: 0px;                 /* space between items */
+}

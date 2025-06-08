@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  background-color: var(--Background);
+  color: var(--Text);
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0px;
+}
+
+:root {
+  --Background: #121511;
+  --Pastelgreen: #B8EA9B;
+  --Text:#F3F5F0;
+  --Secondarytext:#CDCDCD;
+  --Cards:#2A2C29;
+  --Cardsgreen:#1D211B;
+  --Lightcard:#DADED7;
+}
+
+
+/*Loading screen */
+
+/* Full-screen container */
+.centered-container {
+  display: flex;
+  justify-content: center;   /* horizontal centering */
+  align-items: center;       /* vertical centering */
+  height: 100vh;             /* full viewport height */
+  padding: 16px;             /* mobile-friendly padding */
+  box-sizing: border-box;    /* includes padding in the width/height */
+}
+
+.centered-box {
+  text-align: center;
+  width: 100%;
+  max-width: 400px; /* Limit max width for readability on larger phones */
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+

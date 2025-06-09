@@ -29,7 +29,7 @@
     const name = document.getElementById('name').value;
 
     const { data, error } = await supabase
-      .from('onboarding')
+      .from('Support form')
       .insert([{ name }]);
 
     if (error) {

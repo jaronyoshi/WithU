@@ -254,3 +254,61 @@ h5 {
   margin-bottom: 60px;
   margin-top: 155px;
  }
+
+ /*    Onboarding 5 ->>  First onboarding oage with database integration!!   */
+
+
+  .h1ob5 {
+  margin-top: -295px;
+  margin-bottom: 60px;
+ }
+
+ .form-style5 {
+  width: 344px;
+  background: var(--Cardsgreen);
+  border-radius: 8px;
+  height: 42px;
+ }
+
+  .input-style5 {
+  width: 344px;
+  background: var(--Cardsgreen);
+  border-radius: 8px;
+  height: 42px;
+  border-style: none;
+  font-size: 16px;
+  font-family: inter;
+  color: var(--Text);
+ }
+
+ .form-title5{
+  font-family: inter;
+  font-weight: 400;
+  color: var(--Text);
+  font-size: var(--bodylarge);
+ }
+
+.container5 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns content to the left */
+    gap: 10px; /* Adjust vertical spacing between elements */
+}
+
+.container5 p {
+    margin: 0; /* Remove default paragraph margin */
+}
+
+ .nextbutton5 {
+  font-family: inter;
+  font-size: var(--buttonsize);
+  text-decoration: none;
+  width: 100%;
+  background: var(--Pastelgreen);
+  color: var(--Darkgreen);
+  border-radius: 100px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-top: 32px;
+ }
+

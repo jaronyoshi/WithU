@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#B8EA9B"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-title" content="WithU"/>
+<link rel="apple-touch-icon" href="/icons/apple-icon-180x180.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="manifest.json">
+  <!-- Google Fonts: Inter -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- Adobe Fonts: Inter -->
+ <link rel="stylesheet" href="https://use.typekit.net/mzs2cpo.css">
+ <!-- Supabase -->
+ <script src="supabaseClient.js"></script>
+<script src="main.js"></script>
+  <script src="main.js" defer></script>
+   <!-- Supabase Save name to Supabase -->
+    <script>
+  const SUPABASE_URL = 'https://your-project-id.supabase.co';
+  const SUPABASE_KEY = 'your-anon-key';
+  const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+  document.getElementById('name-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    const name = document.getElementById('name').value;
+
+    const { data, error } = await supabase
+      .from('onboarding')
+      .insert([{ name }]);
+
+    if (error) {
+      console.error('Error saving name:', error.message);
+          window.location.href = 'onboarding5.html';
+    } else {
+      console.log('Saved:', data);
+      // Redirect to next page or show confirmation
+    }
+
+  });
+</script>
+  <title>WithU</title>
+</head>
+<body>
+  <main>
+    <div class="centered-container">
+  <div class="content-box">
+<h2 class="h1ob5">Let's get to know each other</h2>
+    <div class="container5"> 
+    <p class="form-title5">Your name</p>
+    <form id="name-form" class="form-style5">
+  <input type="text" id="name" name="name" class="input-style5" required />
+</form>
+    </div>
+    
+
+
+
+
+
+<button type="submit" class="nextbutton5">Next</button>
+
+  </div>
+</div>
+
+
+  </main>
+</body>
+</html>

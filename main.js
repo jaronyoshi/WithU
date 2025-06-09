@@ -1,6 +1,9 @@
-  document.getElementById('name-form').addEventListener('submit', async (e) => {
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('name-form');
+
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    
+
     const name = document.getElementById('name').value;
 
     const { data, error } = await supabase
@@ -13,5 +16,5 @@
       console.log('Saved:', data);
       window.location.href = 'onboarding6.html';
     }
-
   });
+});

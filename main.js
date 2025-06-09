@@ -18,3 +18,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+
+// --- This is to select and deselect symptoms --- //
+
+document.querySelectorAll('.icon').forEach(icon => {
+  icon.addEventListener('click', () => {
+    const isSelected = icon.classList.toggle('selected');
+
+    icon.src = isSelected
+      ? icon.dataset.selected
+      : icon.dataset.default;
+  });
+});
+

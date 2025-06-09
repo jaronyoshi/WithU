@@ -12,6 +12,7 @@ body {
   margin: 0px;
   margin-left: 24px;
   margin-right: 24px;
+  overflow: hidden;
 }
 
 :root {
@@ -226,3 +227,30 @@ h5 {
   text-align: center;        /* centre any text */
   gap: 0px;                 /* space between items */
 }
+
+/*Onboarding 4*/
+
+ .nextbutton4 {
+  font-family: inter;
+  font-size: var(--buttonsize);
+  text-decoration: none;
+  width: 100%;
+  background: var(--Pastelgreen);
+  color: var(--Darkgreen);
+  border-radius: 100px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-top: 72px;
+ }
+
+  .bodytextob4 {
+  margin-bottom: 338px;    
+  font-family: inter;
+  font-size: var(--bodyregular);
+  margin-top: 0px;
+ }
+
+ .h1ob4 {
+  margin-bottom: 60px;
+  margin-top: 155px;
+ }

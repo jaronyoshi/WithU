@@ -8,15 +8,22 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 <meta name="apple-mobile-web-app-title" content="WithU"/>
 <link rel="apple-touch-icon" href="/icons/apple-icon-180x180.png">
+<!--This is for the thumbnail wehn link is shared-->
+  <meta property="og:title" content="With U - Concussion Recovery">
+  <meta property="og:description" content="Concussion recovery">
+  <meta property="og:image" content="https://withunz.netlify.app/assets/Link-thumbnail.png">
+  <meta property="og:url" content="https://withunz.netlify.app">
+  <meta property="og:type" content="website">
+
   <link rel="stylesheet" href="css/style.css">
   <link rel="manifest" href="manifest.json">
   <script src="main.js" defer></script>
   <script>
-    //Automatic nvaigation to onboarding page after 3 second delay
+    //Automatic nvaigation to onboarding page after 1.5 second delay
     window.addEventListener('DOMContentLoaded', () => {
       setTimeout(() => {
         window.location.href = 'onboarding1.html'; // change this to your destination
-      }, 2000);
+      }, 1500);
     });
   </script>
   <title>WithU</title>

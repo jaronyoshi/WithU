@@ -32,3 +32,37 @@ document.querySelectorAll('.icon').forEach(icon => {
   });
 });
 
+
+// ---- Frequency Slider ---- //
+
+document.addEventListener('DOMContentLoaded', function() {
+            const slider = document.getElementById('frequencySlider');
+            const frequencyText = document.getElementById('frequencyText');
+
+            function updateFrequency() {
+                const value = parseInt(slider.value);
+                let text;
+                
+                if (value === 0) {
+                    text = "0 times a week";
+                } else if (value === 7) {
+                    text = "Everyday";
+                } else if (value === 1) {
+                    text = "1 time a week";
+                } else {
+                    text = `${value} times a week`;
+                }
+                
+                frequencyText.textContent = text;
+                
+                // Update slider track fill
+                const percentage = (value / 7) * 100;
+                slider.style.background = `linear-gradient(to right, #B8EA9B 0%, #B8EA9B ${percentage}%, #DADED7 ${percentage}%, #DADED7 100%)`;
+            }
+
+            slider.addEventListener('input', updateFrequency);
+            
+            // Initialize
+            updateFrequency();
+        });
+

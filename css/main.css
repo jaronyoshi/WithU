@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  background-color: var(--Background);
+  color: var(--Text);
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0px;
+  margin-left: 24px;
+  margin-right: 24px;
+  overflow: hidden;
+}
+
+:root {
+  --Background: #121511;
+  --Pastelgreen: #B8EA9B;
+  --Darkgreen:#083F08;
+  --Text:#F3F5F0;
+  --Secondarytext:#CDCDCD;
+  --Cards:#2A2C29;
+  --Cardsgreen:#1D211B;
+  --Lightcard:#DADED7;
+  --bodylarge: 18px;
+  --bodyregular: 16px;
+  --bodysmall: 14px;
+  --bodyxsmall: 12px;
+  --buttonsize:18px;
+  --boldsubtitle:20px;
+  --boldsubtitle2:16px;
+}
+
+/*TYPOGRAPHY ----->>> Need to define heading font size */ 
+
+h1, h2, h3, h4 {
+  font-family: "gelica", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+
+h5 {
+  font-family: Inter;
+  size: 18px;
+  font-weight:500;
+}

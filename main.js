@@ -67,4 +67,50 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
 
+// Mobile nav bar//
+
+document.addEventListener('DOMContentLoaded', function() {
+    const navItems = document.querySelectorAll('.nav-item');
+    
+
+    const currentPage = window.location.pathname.split('/').pop();
+    
+
+    navItems.forEach(item => {
+        const tabName = item.dataset.tab;
+        const icon = item.querySelector('.nav-icon');
+        let iconName = tabName === 'Account' ? 'Profile' : tabName;
+        
+
+        if ((currentPage === 'home.html' && tabName === 'Home') ||
+            (currentPage === 'journal.html' && tabName === 'Journal') ||
+            (currentPage === 'profile.html' && tabName === 'Account')) {
+            
+
+            item.classList.add('active');
+            icon.src = `assets/nav-icons/${iconName}-active.svg`;
+        } else {
+
+            item.classList.remove('active');
+            icon.src = `assets/nav-icons/${iconName}.svg`;
+        }
+    });
+    
+
+    navItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const tabName = this.dataset.tab;
+            
+            if (tabName === 'Home') {
+                window.location.href = 'home.html';
+            } else if (tabName === 'Journal') {
+                window.location.href = 'journal.html';
+            } else if (tabName === 'Account') {
+                window.location.href = 'profile.html';
+            }
+        });
+    });
+});
+
+
 

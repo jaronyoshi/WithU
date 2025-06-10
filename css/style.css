@@ -95,6 +95,7 @@ h5 {
   font-family: inter;
   font-size: var(--bodyregular);
   margin-top: 0px;
+  margin-bottom: 0px;
  }
 
  .nextbutton {
@@ -107,16 +108,15 @@ h5 {
   border-radius: 100px;
   padding-top: 12px;
   padding-bottom: 12px;
-  margin-top: 72px;
+  margin-top: 53px;
  }
 
  /*Onboarding 2*/
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(2, 200px);
-  grid-template-rows: repeat(2, 200px);
-  gap: 15px;
+  grid-template-columns: repeat(2, 150px);
+  grid-template-rows: repeat(2, 150px);
 }
 
 .service-item {
@@ -131,12 +131,11 @@ h5 {
   transition: all 0.3s ease;
   font-family: inter;
   font-size: var(--bodyxsmall);
-  font-weight: 100;
 }
 
 .service-icon {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -151,10 +150,14 @@ h5 {
 
 .service-text {
   color: #e0e0e0;
-  font-size: 16px;
-  font-weight: 500;
+  font-family: inter;
+  font-size: var(--bodyxsmall);
+  font-weight: 400;
   text-align: center;
-  letter-spacing: 0.3px;
+}
+
+.h1obb1{
+  margin-top: 104px;
 }
 
 

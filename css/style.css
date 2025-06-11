@@ -88,7 +88,7 @@ h5 {
 
  .h1ob1 {
   margin-bottom: 20px;
-  margin-top: 162px;
+  margin-top: 102px;
  }
 
  .bodytextob1 {
@@ -168,6 +168,7 @@ h5 {
   display: flex;
   justify-content: space-between;
   margin-bottom: 0px;
+  margin-top: -160px;
  }
 
 
@@ -485,7 +486,7 @@ grid-row-gap: 10px;
   padding-bottom: 12px;
   text-align: center;
   border-radius: 100px;
-  margin-top: 201px;
+  margin-top: 101px;
 }
 
 
@@ -550,7 +551,7 @@ margin-bottom: 67px;
   padding-bottom: 12px;
   text-align: center;
   border-radius: 100px;
-  margin-top: 205px;
+  margin-top: 105px;
 }
 
 /*  ---- Slider ---- */
@@ -704,5 +705,5 @@ margin-bottom: 67px;
   padding-bottom: 12px;
   text-align: center;
   border-radius: 100px;
-  margin-top: 201px;
+  margin-top: 101px;
 }

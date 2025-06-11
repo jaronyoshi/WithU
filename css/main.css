@@ -485,7 +485,7 @@ h5 {
 /*   --  Profile page  --  */
 
 .return-container-profile {
-  margin-top: 44px;
+  margin-top: 24px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;

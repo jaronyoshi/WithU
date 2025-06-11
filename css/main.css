@@ -480,3 +480,35 @@ h5 {
   padding-left: 12px;
   padding-top: 16px;
 }
+
+
+/*   --  Profile page  --  */
+
+.return-container-profile {
+  margin-top: 44px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  align-items: center;
+}
+
+.profile-elements {
+  display: flex;
+  justify-content:space-between;
+}
+
+.profile-elements p {
+  font-family: inter;
+  font-size: 18px;
+  padding: 12px;
+}
+
+
+
+/*   --  Other little fixes  --  */
+
+.nav-supporter {
+  text-decoration: none;
+}
